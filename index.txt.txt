@@ -1,0 +1,22 @@
+function addContent() {
+  //get value from input field
+  const text = document.getElementById("inputText").value;
+
+  //create new DOM element using createElement
+  const newParagraph = document.createElement("div");
+  newParagraph.setAttribute("id", "listItem");
+  //store text as value
+  newParagraph.innerHTML = text;
+  //clear value in input field
+  document.getElementById("inputText").value = "";
+
+  //get content div
+  const contentDiv = document.getElementById("content");
+  //appent the paragraph div to content div
+  contentDiv.appendChild(newParagraph);
+}
+
+function handleForm(event) {
+  event.preventDefault();
+  addContent();
+}

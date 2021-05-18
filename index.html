@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="leftBar">
+        <button
+          id="A"
+          color1="blue"
+          color2="limegreen"
+          gradientType="linear"
+          direction="top left"
+          onclick="changeBackground.call(this)"
+        >
+          A
+        </button>
+        <button
+          id="B1"
+          color1="maroon"
+          color2="black"
+          gradientType="linear"
+          direction="bottom "
+          onclick="changeBackground.call(this)"
+        >
+          1
+        </button>
+        <button
+          id="B"
+          color1="green"
+          color2="yellow"
+          gradientType="linear"
+          direction="bottom "
+          onclick="changeBackground.call(this)"
+        >
+          B
+        </button>
+        <button
+          id="C"
+          color1="blue"
+          color2="hotpink"
+          gradientType="radial"
+          onclick="changeBackground.call(this)"
+        >
+          C
+        </button>
+        <button
+          id="B2"
+          color1="forestgreen"
+          color2="black"
+          gradientType="radial"
+          onclick="changeBackground.call(this)"
+        >
+          2
+        </button>
+        <button id="O" onclick="toggleDarkMode()">O</button>
+      </div>
+      <div id="searchArea">
+        <h1 style="color: white">GOOGLE</h1>
+        <input
+          id="inputText"
+          type="text"
+          placeholder="Search Google or type a URL"
+        />
+        <button id="search-btn">search</button>
+      </div>
+    </div>
+  </body>
+</html>
